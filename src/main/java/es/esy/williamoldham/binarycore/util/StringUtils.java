@@ -1,6 +1,5 @@
-package es.esy.williamoldham.binarycore;
+package es.esy.williamoldham.binarycore.util;
 
-import es.esy.williamoldham.binarycore.util.DefaultFontInfo;
 import org.bukkit.ChatColor;
 
 /**

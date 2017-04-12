@@ -1,8 +1,6 @@
 package es.esy.williamoldham.binarycore.util;
 
-import es.esy.williamoldham.binarycore.StringUtils;
 import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
 
 /**
  * Created by william on 12/04/17.
