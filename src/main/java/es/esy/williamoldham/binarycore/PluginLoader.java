@@ -31,6 +31,10 @@ public class PluginLoader {
 
     private List<BinaryPlugin> plugins = new ArrayList<>();
 
+    public List<BinaryPlugin> getPlugins(){
+        return plugins;
+    }
+
     public void registerPlugin(BinaryPlugin plugin, String version){
         if(!checkMinVersion(version)){
             throw new IllegalArgumentException("Plugin trying to be registered is incompatible with the core plugin! Please check versions!");
