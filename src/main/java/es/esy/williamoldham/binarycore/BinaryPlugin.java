@@ -15,6 +15,16 @@ import org.bukkit.plugin.java.JavaPlugin;
  */
 public abstract class BinaryPlugin extends JavaPlugin implements SimpleDesign {
 
+    private String repoName = "";
+
+    protected void setRepoName(String name){
+        repoName = name;
+    }
+
+    public String getRepoName(){
+        return repoName;
+    }
+
     @Override
     public void onDisable() {
         save();
