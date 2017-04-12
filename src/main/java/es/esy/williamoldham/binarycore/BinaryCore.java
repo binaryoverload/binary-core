@@ -16,6 +16,7 @@ public class BinaryCore extends BinaryPlugin {
         ConsoleCommandSender console = Bukkit.getConsoleSender();
         console.sendMessage(StringUtils.colour("&aBinaryOverload's Core Plugin Enabled!"));
         PluginLoader.getInstance().registerPlugin(this, this.getDescription().getVersion());
+        setRepoName("binary-core");
     }
 
     @Override
