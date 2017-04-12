@@ -2,8 +2,6 @@ package es.esy.williamoldham.binarycore;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.ConsoleCommandSender;
-import sun.misc.Version;
-import sun.plugin.navig.motif.Plugin;
 
 import java.util.ArrayList;
 import java.util.List;
