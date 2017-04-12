@@ -1,0 +1,4 @@
+name: BinaryCore
+version: 1.0.0
+author: BinaryOverload
+main: es.esy.williamoldham.binarycore.BinaryCore
