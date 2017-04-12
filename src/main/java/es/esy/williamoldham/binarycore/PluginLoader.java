@@ -1,5 +1,6 @@
 package es.esy.williamoldham.binarycore;
 
+import es.esy.williamoldham.binarycore.util.Sender;
 import org.bukkit.Bukkit;
 import org.bukkit.command.ConsoleCommandSender;
 
