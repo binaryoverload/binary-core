@@ -1,4 +1,7 @@
 name: BinaryCore
-version: 1.5.1
+version: 1.6.0
 author: BinaryOverload
 main: es.esy.williamoldham.binarycore.BinaryCore
+commands:
+  binary-info:
+    description: Shows all of my plugins
