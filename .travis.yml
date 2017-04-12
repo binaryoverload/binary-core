@@ -1,0 +1,15 @@
+language: java
+jdk:
+- oraclejdk8
+script:
+- mvn clean package
+deploy:
+  provider: releases
+  api_key:
+    secure: p+RNbRhpToldGBZTLycD5hIZPjAFwz/ha2gM0QooRen83xAIv5UPTwvDZRo7NtjDbDmGmmBOteq5ox0tB/hJ2kgRGKuBI/eqUaWpzbqovBwthh3mlY6FIkGtmOelAULq63jBu0XTzgB3ZdWr0Den6x7do5ns2/tT4bMGelUlRKfVYrSbSp+wOy1+ZtzWW3XbLGvw26ySHNPFTKcnaXrWUjHwogCEOSZnEvPpCkghWPF2GwyRXsDXiw845zV4Z4f+fsYUcIXs0JREzDE3cs7GMVz7fQDhIhRZERhnfR4dI7CbXge8WztU3Ffgziz3agyX561NNMUSQ5AhZ8ZARNvAUaNVqq766c5M13csmwn5+OaW1PB91GfT9Pg6eqzaTtfh3peY57O7OUYXGtfvYMxsfcj6M+y6DNmPRFmpW1JDQ4+2iCdD9XPk2B2E0nhLQnW/gOhjpqRpl2zH/BaiO3SGWF5+V8klBj76gat2CHlf5YC+BIC8/4BDBl/766C2w9h75yPEov8+wEr9RFx3sumjQNM5aXYrEREcirSQ0HAfv80v2bs84QAeoeC3q5DKBLKRbRQ4DdHwZWDc53R+joDZALf5i76KGdjmNu0x51LDzaT2aJnQNbd5qbHRzl20RXNXUdZje+w3kOnaCwblgR/qlBLG0sblZyLsDVClfPWFjcg=
+  file: target/binary-core.jar
+  skip_cleanup: true
+  on:
+    repo: binaryoverload/binary-core
+    tags: true
+    all_branches: true
