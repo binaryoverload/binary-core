@@ -70,8 +70,10 @@ public class PluginLoader {
         int ver = Integer.parseInt(versionSplit[0]);
         int ver1 = Integer.parseInt(mainVersionSplit[0]);
 
-        if (ver1 >= ver && ver1 <= ver + 1){
+        if (ver1 == ver){
             check = true;
+        } else {
+            check = false;
         }
 
         return check;
