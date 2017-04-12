@@ -57,8 +57,8 @@ public class PluginLoader {
         assert checkVersion(version) : "The plugin trying to be registered has an invalid min version!";
         assert checkVersion(main.getDescription().getVersion()) : "The main plugin trying to be registered has an invalid min version!";
 
-        String[] versionSplit = version.split(".");
-        String[] mainVersionSplit = main.getDescription().getVersion().split(".");
+        String[] versionSplit = version.split("\\.");
+        String[] mainVersionSplit = main.getDescription().getVersion().split("\\.");
 
         boolean check = false;
 
